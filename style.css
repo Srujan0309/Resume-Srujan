@@ -1,0 +1,104 @@
+body{
+    background: #EEEEEE;
+}
+.container1 {
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #DDDDDD; 
+    border: 1px solid #ddd;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 20px; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    /* padding-top: 10px; */
+    /* padding-left: 10px; */
+    /* margin-left: 0; */
+}
+
+.summary, .education, .skills,.projects, .certifications, .contact {
+    margin-top: 20px; 
+    padding: 20px; 
+    background-color: #DDDDDD;
+    border: 1px solid #ddd; 
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+.contact{
+    margin-bottom: 20px;
+}
+
+
+.education ul,.projects>ul, .certifications>ul, .bord ul, .contact ul{
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.education li, .projects li, .certifications li {
+    margin-bottom: 10px;
+}
+
+.education h2, .projects h2, .certifications li, .contact li {
+    margin-bottom: 15px; 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+}
+
+.summary h2, .education h2, .skills h2, .projects h2, .certifications h2, .bord h3,.contact h2{
+    font-size: 1.5rem; 
+    border-bottom: 2px solid #333; 
+    padding-bottom: 5px;
+}
+
+.summary p, .education li, .skills p, .projects p, .projects li, .certifications li{
+    font-size: 1rem; 
+    line-height: 1.5; 
+}
+.ExtraContainer{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:250px 170px;
+    gap:2rem;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    padding: 20px; 
+    background-color: #DDDDDD;
+    border: 1px solid #ddd; 
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+.bord:hover{
+    border:1.5px solid white;
+}
+.bord{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    padding: 20px;   
+    border: 2px solid #686D76;
+}
+.achievements{
+    grid-column: span 2;
+}
